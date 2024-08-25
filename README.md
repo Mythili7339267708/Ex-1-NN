@@ -1,7 +1,7 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>ENTER YOUR NAME: v MYTHILI</H3>
+<H3>ENTER YOUR REGISTER NO: 212223040123.</H3>
 <H3>EX. NO.1</H3>
-<H3>DATE</H3>
+<H3>DATE: 25.08.24</H3>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
 
 ## AIM:
@@ -37,11 +37,153 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-TYPE YOUR CODE HERE
+
+```
+import pandas as pd
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+
+df=pd.read_csv('Churn_Modelling.csv')
+print(df)
+```
+
+```
+
+df.head(6)
+
+
+```
+
+```
+x = df.iloc[:, :-1].values
+print(x)
+```
+
+
+```
+
+y = df.iloc[:, -1].values
+print(y)
+
+```
+
+```
+df.isnull()
+
+```
+
+```
+
+print(df.isnull().sum())
+
+```
+
+```
+
+df.duplicated()
+
+```
+
+
+```
+
+df.describe()
+
+```
+
+
+```
+
+print(df['Gender'].describe())
+
+```
+
+```
+
+df=pd.read_csv('Churn_Modelling.csv')
+df = df.drop(['Surname', 'Geography', 'Gender'], axis=1)
+df.head()
+
+```
+
+```
+
+scaler = MinMaxScaler()
+df1 = pd.DataFrame(scaler.fit_transform(df))
+print(df1)
+
+```
+
+```
+
+import pandas as pd
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+df=pd.read_csv('Churn_Modelling.csv')
+scaler = MinMaxScaler()
+x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
+print(x_train)
+print(len(x_test))
+print(x_test)
+print(len(x_test))
+
+```
 
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+
+
+
+DATASET:
+
+
+
+
+NORMALISED SET:
+
+
+
+![image](https://github.com/user-attachments/assets/1007e302-911c-4311-9fd9-5ed3bfe0cf98)
+
+
+
+
+X VALUES: 
+
+
+![image](https://github.com/user-attachments/assets/c7e473e3-19d5-4bbf-9d8a-4639e84b42c5)
+
+
+Y VALUES:
+
+![image](https://github.com/user-attachments/assets/df961348-99f7-423f-ba1a-374040643fd9)
+
+
+NULL VALUES:
+
+![image](https://github.com/user-attachments/assets/fcae19a5-aafd-4c2a-beea-204260dd2626)
+
+
+
+DUPLICATED VALUES:
+
+
+![image](https://github.com/user-attachments/assets/806b9f35-91c6-4a93-941e-b5f0606e25b4)
+
+
+DESCRIBED VALUES:
+
+![image](https://github.com/user-attachments/assets/b0d726c7-7143-4257-abcf-f0f9261f2e73)
+
+
+TRAINING DATA AND TESTING DATA:
+
+![image](https://github.com/user-attachments/assets/044a771f-12b3-46c9-b513-247be438ac3d)
+
 
 
 ## RESULT:
