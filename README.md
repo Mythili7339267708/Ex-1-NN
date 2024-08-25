@@ -1,4 +1,4 @@
-<H3>ENTER YOUR NAME: v MYTHILI</H3>
+<H3>ENTER YOUR NAME: V MYTHILI</H3>
 <H3>ENTER YOUR REGISTER NO: 212223040123.</H3>
 <H3>EX. NO.1</H3>
 <H3>DATE: 25.08.24</H3>
@@ -138,7 +138,6 @@ print(len(x_test))
 
 
 
-DATASET:
 
 
 
@@ -149,6 +148,12 @@ NORMALISED SET:
 
 ![image](https://github.com/user-attachments/assets/1007e302-911c-4311-9fd9-5ed3bfe0cf98)
 
+
+HEAD (6):
+
+
+
+![image](https://github.com/user-attachments/assets/3c1282b0-5e9a-4895-b200-9eeb73675c97)
 
 
 
