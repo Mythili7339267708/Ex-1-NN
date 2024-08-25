@@ -185,6 +185,14 @@ DESCRIBED VALUES:
 ![image](https://github.com/user-attachments/assets/b0d726c7-7143-4257-abcf-f0f9261f2e73)
 
 
+DROP VALUE:
+
+
+
+![image](https://github.com/user-attachments/assets/fdab990d-06b5-4360-8d82-353ae0b1abdf)
+
+
+
 TRAINING DATA AND TESTING DATA:
 
 ![image](https://github.com/user-attachments/assets/044a771f-12b3-46c9-b513-247be438ac3d)
